@@ -1,0 +1,90 @@
+@import url('https://fonts.cdnfonts.com/css/sf-ironsides');
+@import url('https://fonts.cdnfonts.com/css/laila');
+@import url(https://db.onlinewebfonts.com/c/c4edbff807a21e68cd990230dab176df?family=Anavio+Small+Capitals+W01+Rg);
+
+.parentcontainer {
+    background-image: url('/aboutusBg.png');
+    background-size: 100%;
+    color: black;
+    padding: 150px 150px 100px 120px;
+}
+.head{
+    color: #50FF00;
+    font-family: 'SF Ironsides', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    line-height: normal;
+    margin-left: -2px;
+    text-transform: uppercase;
+}
+.hr {
+    width: 275px;
+    height: 6px;
+    border-radius: 3.2px;
+    background: #415991;
+    border: none;
+}
+.para {
+    color: #ffffff;
+    font-family: laila;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.subheading {
+    color: #50FF00;
+    font-family: 'SF Ironsides', sans-serif;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.title{
+    font-size: 20px;
+    font-family: 'Anavio Small Capitals W01 Rg';
+    color: #FBFF00;
+
+}
+.list {
+    margin-left: 40px;
+    margin-top: 25px;
+}
+
+.sec {
+    margin-bottom: 40px;
+}
+.listitem {
+    color: black;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.listitem::before {
+    margin-left: 1.5em;
+}
+@media only screen and (max-width: 1023px) {
+    .parentcontainer {
+        padding: 90px 5vw 50px 5vw;
+    }
+}
+@media only screen and (max-width: 555px) {
+    .hr {
+        width: 275px;
+    }
+    .head {
+        font-size: 40px;
+    }
+    .para {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+    .subheading {
+        font-size: 35px;
+    }
+    .list {
+        margin-left: 20px;
+    }
+}

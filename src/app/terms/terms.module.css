@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'SF Ironsides';
+    src: url('/font/SF-Ironsides.ttf');
+}
+ 
+@font-face {
+    font-family: "Laila";
+    src: url('/font/Laila-Regular.ttf');
+}
+
+.parentcontainer {
+    background-image: url("/aboutusBg.png");
+    /* background-image: url("/contactUsBg2.png"); */
+    background-size: 100%;
+    background-color: #0b0c0c;
+    color: rgb(255, 255, 255);
+    padding: 150px 150px 100px 120px;
+}
+.parentcontainer > h2{
+    color: #50FF00;
+    font-family: 'SF Ironsides', sans-serif;
+}
+.head {
+    color: #002886;
+    font-family: laila;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: -2px;
+}
+.hr {
+    width: 486px;
+    height: 6px;
+    border-radius: 3.2px;
+    background: #415991;
+    border: none;
+}
+.para {
+    color: #fff;
+    font-family: laila;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 8px;
+}
+
+.subheading {
+    color:  #50FF00;
+    font-family: 'SF Ironsides', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.list {
+    margin-left: 40px;
+}
+
+.sec {
+    margin-block: 1em;
+}
+.listitem {
+    color: #eaeffa;
+    font-size: 20px;
+}
+
+.listitem::before {
+    margin-left: 1.5em;
+}
+@media only screen and (max-width: 1023px) {
+    .parentcontainer {
+        padding: 90px 5vw 50px 5vw;
+    }
+}
+@media only screen and (max-width: 555px) {
+    .hr {
+        width: auto;
+    }
+    .head {
+        font-size: 40px;
+    }
+    .para {
+        font-size: 17px;
+        margin-bottom: 6px;
+    }
+    .subheading {
+        font-size: 35px;
+    }
+    .list {
+        margin-left: 20px;
+    }
+}

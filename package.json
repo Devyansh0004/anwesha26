@@ -9,9 +9,27 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@rive-app/react-canvas": "^4.24.0",
+    "axios": "^1.13.2",
+    "bootstrap": "^5.3.8",
+    "crypto-js": "^4.2.0",
+    "emailjs": "^4.0.3",
+    "firebase": "^12.6.0",
+    "framer-motion": "^12.23.25",
+    "jspdf": "^3.0.4",
+    "lucide-react": "^0.556.0",
     "next": "16.0.7",
+    "qrcode": "^1.5.4",
     "react": "19.2.0",
-    "react-dom": "19.2.0"
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "19.2.0",
+    "react-hot-toast": "^2.6.0",
+    "react-lottie": "^1.2.10",
+    "react-qr-code": "^2.0.18",
+    "react-tabs": "^6.1.0",
+    "react-toastify": "^11.0.5",
+    "toast": "^0.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",

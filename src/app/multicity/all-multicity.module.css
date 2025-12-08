@@ -1,0 +1,128 @@
+@font-face {
+	font-family: "Poppins";
+	src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+}
+
+.container{
+	background-image: url("/multicity/MulticityBackground.webp");
+	background-size: 100vw;
+	overflow-x: hidden;
+	background-position: 0 60px;
+	background-attachment: fixed;
+    background-color: #63262d00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 77px;
+    top: 0px;
+
+	@media screen and (max-width: 450px) {
+		background-image: url("/multicity/MulticityBackground_Mobile.webp");
+		background-position: 0 -10px;
+	}
+}
+
+.container > *{
+    font-family: 'Poppins', sans-serif !important;
+}
+
+.background {
+	position: fixed;
+	width: 100vw;
+	z-index: -1;
+}
+
+.topmargin {
+	height: min(37.5px, 5vh);
+	width: 100%;
+	background-image: linear-gradient(180deg, #F3C978, #F7C158);
+}
+
+.heroImage {
+	width: 100vw;
+	/* margin-top: calc(60px - 5vw); */
+	margin-bottom: min(150px, 25vw);
+}
+
+.parallaxBackground {
+	display: flex;
+	width: 100vw;
+	align-items: center;
+	flex-direction: column;
+}
+
+.title, .section {
+	margin-block: 110px;
+	display: flex;
+	flex-direction: column;
+}
+
+.title img {
+	width: 500px;
+	max-width: 75vw;
+	margin-bottom: 20px;
+}
+
+.section img {
+	height: 35px;
+	max-height: 2.5rem;
+	margin-bottom: 20px;
+	align-self: center;
+}
+
+.about {
+    color: #ffffff;
+    text-align: justify;
+    width: 500px;
+	max-width: 75vw;
+}
+
+.content{
+    margin: max(50px, min(25vh, 500px)) 0;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+	row-gap: max(150px, min(50vh, 500px));
+}
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1200;
+}
+
+.modalBox {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.modalActions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.posterImg {
+  width: 260px;      /* control size */
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+@media (max-width: 480px) {
+  .posterImg {
+    width: 200px;
+  }
+}

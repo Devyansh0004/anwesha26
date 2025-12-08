@@ -1,0 +1,215 @@
+@import url(https://db.onlinewebfonts.com/c/16ff7a691ffa5aae54301d500d494a5b?family=Anavio+Small+Capitals+W01+Bold);
+
+@font-face {
+    font-family: 'BroadwayShadow';
+    src: url('/font/BroadwayShadow.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SF Ironside';
+    src: url('/font/SF_Ironsides.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Laila';
+    src: url('/font/Laila-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Laila-Bold';
+    src: url('/font/Laila-Medium.ttf') format('truetype');
+}
+
+/* @import url(https://db.onlinewebfonts.com/c/16ff7a691ffa5aae54301d500d494a5b?family=Anavio+Small+Capitals+W01+Bold); */
+
+@font-face {
+    font-family: 'BroadwayShadow';
+    src: url('/font/BroadwayShadow.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SF Ironside';
+    src: url('/font/SF_Ironsides.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Laila';
+    src: url('/font/Laila-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Laila-Bold';
+    src: url('/font/Laila-Medium.ttf') format('truetype');
+}
+
+/* MAIN LAYOUT */
+.mainContainer {
+    margin-top: 65px;
+    font-family: 'SF Ironside', sans-serif;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* PAGE BG */
+.subContainer {
+    position: relative;
+    flex: 1;
+    padding-bottom: 30px;
+}
+.subContainer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/TeamBg.png');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    z-index: 0;
+    pointer-events: none;
+}
+.subContainer > * {
+    position: relative;
+    z-index: 1;
+}
+
+/* WELCOME HEADING */
+.welcome {
+    font-family: 'Anavio Small Capitals W01 Bold';
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 180px;
+    color: white;
+}
+.welcome::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    background-image: url('/profilebg.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+    z-index: -1;
+    filter: hue-rotate(25deg) saturate(120%) brightness(1.2);
+}
+
+/* PROFILE IMAGE */
+.userImage {
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.userImage img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+/* NAME + QR BLOCK */
+.idandqr {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+    flex-wrap: wrap;
+}
+
+/* QR BOX */
+.qrcode {
+    padding: 15px;
+}
+.qrcode img,
+.qrcode canvas {
+    border-radius: 15px;
+}
+
+/* USER DETAILS */
+.userDetails {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 10px;
+    font-family: 'Laila', sans-serif;
+    padding: 25px 12px;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+    flex-wrap: wrap;
+}
+.userDetails > div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.userDetailsHeading {
+    color: white;
+    font-size: 20px;
+    font-family: 'Laila-Bold';
+}
+.userDetailsContent {
+    color: white;
+    font-size: 16px;
+    font-family: 'Laila';
+}
+
+/* PROFILE TEXT */
+.anwesha_id {
+    font-size: 26px;
+    color: white;
+    letter-spacing: 1px;
+}
+.anwesha_username {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+}
+
+/* ICONS */
+.copy {
+    background: transparent;
+    border: none;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+/* EVENTS */
+.eventsInfo {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+.eventsHeading {
+    font-family: 'Anavio Small Capitals W01 Bold';
+    border-bottom: 1px solid white;
+    font-size: 20px;
+}
+
+/* RESPONSIVE FIXES */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 35px;
+    }
+    .anwesha_username {
+        font-size: 40px;
+    }
+    .anwesha_id {
+        font-size: 18px;
+    }
+}
+@media (max-width: 500px) {
+    .idandqr {
+        flex-direction: column;
+    }
+    .anwesha_username {
+        font-size: 32px;
+    }
+    .anwesha_id {
+        font-size: 16px;
+    }
+}

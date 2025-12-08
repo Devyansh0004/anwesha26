@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&display=swap');
+@font-face {
+    font-family: 'BroadwayShadow';
+    src: url('../styles/fonts/BroadwayShadow.ttf');
+}
+@font-face {
+    font-family: 'SF Ironsides'; /* Name for the font */
+    src: url('/font/SF_Ironsides.ttf') format('truetype'); /* Path to the font */
+    font-weight: normal; /* Define the weight */
+    font-style: normal;  /* Define the style */
+}
+.container {
+    background-image: url("/contactUsBg2.png");
+    background-repeat: no-repeat;
+    padding: 15px 0px 20px 0px;
+    width: 100%;
+    min-height: 100vh;
+}
+.effectcontainer{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    text-align: center;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.20) 85.95%);
+}
+
+.hero {
+    background-image: url(/multicity/bhopal.png);
+    aspect-ratio: 16/9;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 100vw;
+    height: 101vh;
+}
+
+.mainHeading {
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: #2b0072;
+    font-family: BroadwayShadow;
+    font-size: 6vw;
+    font-weight: 400;
+    /* left: 4%; */
+}
+.subHeading {
+    margin-bottom: 4rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #2b0072;
+    font-family: BroadwayShadow;
+    font-size: 4vw;
+    font-weight: 400;
+    /* left: 4%; */
+}
+
+.mainForm {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; */
+    /* margin-right: 2vw; */
+    /* height: 70vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.70);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+    height: fit-content;
+    padding: 20px;
+    width: fit-content;
+    margin: 8rem auto 20px auto;
+    border: 2px black;
+    color: white;
+}
+
+@media only screen and (max-width: 400px) {
+   .mainForm{
+    padding: 0px;
+   } 
+}
+
+.mainForm h2 {
+    font-size: 55px;
+    font-weight: 550;
+    font-family: "SF Ironsides";
+}
+
+.form_row {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    
+}
+
+.field {
+    margin-bottom: 10px;
+}
+
+.field input,
+.field select {
+    width: 25vw;
+    height: 45px;
+    margin: 2px;
+    padding: 2px 15px;
+    font-size: 17px;
+    background: #141414;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: white;
+    font-family: Laila;
+    /* border-color: #2b0072;
+    border-bottom: 2px solid #2b0072;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; */
+}
+
+.field input:focus,
+.field select:focus {
+    outline: none;
+}
+
+.field label {
+    font-size: 20px;
+    padding-inline: 5px;
+    font-family: Laila;
+}
+
+.buttonWrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 60vw;
+    max-width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.buttonWrapper button {
+    width: 200px;
+    height: 45px;
+    font-size: 25px;
+    margin-top: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    background-color: #2b0072;
+    color: aliceblue;
+}
+
+.members {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.member_input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px;
+}
+
+.member_input span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #000000;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.member_input div {
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 2px 5px 2px 5px;
+    border: 4px 4px 4px 0px solid #000000;
+    box-shadow: 0px 4px 4px #000000;
+    border-radius: 5px 0px 0px 5px;
+    
+}
+
+.member_input input {
+    color: white;
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    background: #141414;
+    border-radius: 0px 5px 5px 0px;
+    outline: none;
+    width: 150px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+.member_input img {
+    height: 35px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.member_input img:hover {
+    transform: scale(1.05);
+}
+
+.add_member_btn {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding: 2px 7px 2px 7px;
+    cursor: pointer;
+    color: #ffffff;
+    background: #000000;
+    border: 1px solid #4f4f4f;
+    border-radius: 5px;
+    font-family: Laila;
+    font-style: normal;
+    font-weight: 650;
+    font-size: 13px;
+    line-height: 36px;
+}
+
+.add_member_btn img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.register_btn_box{
+    z-index: 1;
+}
+.register_button{
+    all: unset;
+    width: 231.338px;
+    height: 76.135px;
+
+    /* flex-shrink: 0; */
+    background-image: url("/pics/Subtract.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-clip: border-box;
+    background-position: center;
+    fill: #000;
+    filter: drop-shadow(0px -3.623px 3.623px #55A826);
+
+    color: var(--Color-Primary500, #50FF00);
+    text-align: center;
+
+    /* SF/SF - 36 REG */
+    font-family: "SF Ironsides";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
+.register_button_small{
+    width: 191.315px;
+    height: 62.963px;
+    font-size: 28px;
+    filter: drop-shadow(0px -2.996px 2.996px #55A826);
+}
+
+.register_button:hover{
+    filter: drop-shadow(0px -3.623px 3.623px #03fa24);
+    color: var(--Color-Primary500, #00ff26);
+}
+.register_button:active{
+    filter: drop-shadow(1px 1px 1px white);
+}
+
+/* .register_btn {
+    width: fit-content;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid #4f4f4f;
+    border-radius: 5px;
+    margin: 10px auto 20px auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 36px;
+    transition: 0.5s;
+}
+
+.register_btn:hover {
+    background-color: #000000;
+    color: #ffffff;
+} */
+
+@media only screen and (max-width: 860px) {
+    .form {
+        flex-direction: column;
+        align-items: center;
+        padding-inline: 20px;
+    }
+
+    .mainForm {
+        align-items: center;
+        /* height: 100vh; */
+    }
+
+    .mainHeading {
+        font-size: 10vw;
+    }
+
+    .form_row {
+        flex-direction: column;
+    }
+
+    .form_row .field input {
+        width: 80vw;
+    }
+
+    .field input {
+        width: 80vw;
+    }
+
+    .members {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        width: 80vw;
+    }
+
+    .subHeading {
+        font-size: 30px;
+    }
+    .mainHeading {
+        font-size: 45px;
+    }
+}
