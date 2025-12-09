@@ -7,7 +7,6 @@ import Table from 'react-bootstrap/Table'
 import Form from 'react-bootstrap/Form'
 import InputGroup from 'react-bootstrap/InputGroup'
 import LeaderboardItem from '../../../../components/Leaderboard/LeaderboardItem'
-import Items from '../../../components/Leaderboard/Items'
 import React, { useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
 const host = process.env.NEXT_PUBLIC_HOST
